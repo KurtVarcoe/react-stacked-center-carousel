@@ -94,6 +94,8 @@ function useResizeDetector<T extends HTMLElement = any>({
     [handleWidth, handleHeight]
   );
 
+  type ResizeObserverCallback = (entries: ResizeObserverEntry[], observer: ResizeObserver) => void;
+
   const resizeCallback: ResizeObserverCallback = useCallback(
     (entries: ResizeObserverEntry[]) => {
       if (!handleWidth && !handleHeight) return;

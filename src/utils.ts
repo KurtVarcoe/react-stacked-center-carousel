@@ -4,6 +4,8 @@ import type { DebouncedFunc } from 'lodash';
 
 import { Props } from './types';
 
+type ResizeObserverCallback = (entries: ResizeObserverEntry[], observer: ResizeObserver) => void;
+
 export type PatchedResizeObserverCallback = DebouncedFunc<ResizeObserverCallback> | ResizeObserverCallback;
 
 export const patchResizeCallback = (
