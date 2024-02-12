@@ -36,7 +36,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
-    "react-resize-detector": "^10.0.1"
+    "react-resize-detector": "^9.0.0"
   },
   "peerDependencies": {
     "react": ">=16",
