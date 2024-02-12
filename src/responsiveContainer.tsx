@@ -1,5 +1,5 @@
 import React from 'react';
-import { useResizeDetector } from 'react-resize-detector';
+import useResizeDetector from './useResizeDetector';
 import { StackedCarousel } from '.';
 export interface ResponsiveContainerProps {
   render: (
